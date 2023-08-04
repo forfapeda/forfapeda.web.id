@@ -1,0 +1,13 @@
+(function() {
+    var style = document.createElement('style');
+    document.head.appendChild(style);
+    function css(r) {
+        style.sheet.insertRule(r)
+    }
+    function r(el) {
+        document.querySelectorAll(el).forEach(function(e) {
+            e.remove();
+        });
+    }
+}
+)();

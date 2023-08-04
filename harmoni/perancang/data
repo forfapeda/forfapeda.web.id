@@ -1,0 +1,309 @@
+
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined index: multipleSearch</p>
+<p>Filename: models/Datatable_mdl.php</p>
+<p>Line Number: 59</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/application/models/Datatable_mdl.php<br />
+			Line: 59<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/application/controllers/Perancang_ctrl.php<br />
+			Line: 67<br />
+			Function: get_datatable_record			</p>
+
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined index: search</p>
+<p>Filename: models/Datatable_mdl.php</p>
+<p>Line Number: 87</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/application/models/Datatable_mdl.php<br />
+			Line: 87<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/application/controllers/Perancang_ctrl.php<br />
+			Line: 67<br />
+			Function: get_datatable_record			</p>
+
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Trying to access array offset on value of type null</p>
+<p>Filename: models/Datatable_mdl.php</p>
+<p>Line Number: 87</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/application/models/Datatable_mdl.php<br />
+			Line: 87<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/application/controllers/Perancang_ctrl.php<br />
+			Line: 67<br />
+			Function: get_datatable_record			</p>
+
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined index: start</p>
+<p>Filename: models/Datatable_mdl.php</p>
+<p>Line Number: 126</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/application/models/Datatable_mdl.php<br />
+			Line: 126<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/application/controllers/Perancang_ctrl.php<br />
+			Line: 67<br />
+			Function: get_datatable_record			</p>
+
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined index: length</p>
+<p>Filename: models/Datatable_mdl.php</p>
+<p>Line Number: 126</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/application/models/Datatable_mdl.php<br />
+			Line: 126<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/application/controllers/Perancang_ctrl.php<br />
+			Line: 67<br />
+			Function: get_datatable_record			</p>
+
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined index: length</p>
+<p>Filename: models/Datatable_mdl.php</p>
+<p>Line Number: 127</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/application/models/Datatable_mdl.php<br />
+			Line: 127<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/application/controllers/Perancang_ctrl.php<br />
+			Line: 67<br />
+			Function: get_datatable_record			</p>
+
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>
+<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined index: start</p>
+<p>Filename: models/Datatable_mdl.php</p>
+<p>Line Number: 127</p>
+
+
+	<p>Backtrace:</p>
+	
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/application/models/Datatable_mdl.php<br />
+			Line: 127<br />
+			Function: _error_handler			</p>
+
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/application/controllers/Perancang_ctrl.php<br />
+			Line: 67<br />
+			Function: get_datatable_record			</p>
+
+		
+	
+		
+	
+		
+			<p style="margin-left:10px">
+			File: /var/www/html/harmoni/index.php<br />
+			Line: 315<br />
+			Function: require_once			</p>
+
+		
+	
+
+</div>{"draw":null,"recordsTotal":15,"recordsFiltered":15,"data":[["NAMA A","19800312 200912 1002","Perancang Ahli Madya","POKJA 1","Provinsi Papua;Kota Jayapura;Kabupaten Jayapura;Kabupaten Keerom;Kabupaten Sarmi;Kabupaten Waropen;Kabupaten Mamberamo;Kabupaten Mamberamo Raya;Kabupaten Kepulauan Yapen;Kabupaten Biak Numfor;Kabupaten Supiori;Provinsi Papua Selatan;DPRD Kabupaten Merauke;KabupatenBoven Digoel;Kabupaten Mappi;Kabupaten Asmat;Provinsi Papua Tengah;Kabupaten Nabire;Kabupaten Puncak Jaya;Kabupaten Paniai;Kabupaten Mimika;Kabupaten Puncak;Kabupaten Dogiyai;Kabupaten Intan Jaya;Kabupaten Deiyai;Provinsi Papua Pegunungan;Kabupaten Jayawijaya;Kabupaten Pegunungan Bintang;Kabupaten Yahukimo;Kabupaten Tolikara;Kabupaten Yalimo;Kabupaten Lanny Jaya;Kabupaten Nduga;,"<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forffapeda.web.id\/harmoni\/riwayat_perancang\/9\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/9\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/9\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"],["NAMA B","197711042003122002","Perancang Ahli Madya","Pokja II","Provinsi Papua;Kota Jayapura;Kabupaten Jayapura;Kabupaten Keerom;Kabupaten Sarmi;Kabupaten Waropen;Kabupaten Mamberamo;Kabupaten Mamberamo Raya;Kabupaten Kepulauan Yapen;Kabupaten Biak Numfor;Kabupaten Supiori;Provinsi Papua Selatan;DPRD Kabupaten Merauke;KabupatenBoven Digoel;Kabupaten Mappi;Kabupaten Asmat;Provinsi Papua Tengah;Kabupaten Nabire;Kabupaten Puncak Jaya;Kabupaten Paniai;Kabupaten Mimika;Kabupaten Puncak;Kabupaten Dogiyai;Kabupaten Intan Jaya;Kabupaten Deiyai;Provinsi Papua Pegunungan;Kabupaten Jayawijaya;Kabupaten Pegunungan Bintang;Kabupaten Yahukimo;Kabupaten Tolikara;Kabupaten Yalimo;Kabupaten Lanny Jaya;Kabupaten Nduga;","<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/riwayat_perancang\/10\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/10\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/10\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"],["C","198302202006041001","Perancang Ahli Madya","POKJA 1","Provinsi Papua;Kota Jayapura;Kabupaten Jayapura;Kabupaten Keerom;Kabupaten Sarmi;Kabupaten Waropen;Kabupaten Mamberamo;Kabupaten Mamberamo Raya;Kabupaten Kepulauan Yapen;Kabupaten Biak Numfor;Kabupaten Supiori;Provinsi Papua Selatan;DPRD Kabupaten Merauke;KabupatenBoven Digoel;Kabupaten Mappi;Kabupaten Asmat;Provinsi Papua Tengah;Kabupaten Nabire;Kabupaten Puncak Jaya;Kabupaten Paniai;Kabupaten Mimika;Kabupaten Puncak;Kabupaten Dogiyai;Kabupaten Intan Jaya;Kabupaten Deiyai;Provinsi Papua Pegunungan;Kabupaten Jayawijaya;Kabupaten Pegunungan Bintang;Kabupaten Yahukimo;Kabupaten Tolikara;Kabupaten Yalimo;Kabupaten Lanny Jaya;Kabupaten Nduga;","<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/riwayat_perancang\/11\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/11\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/11\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"],["NAME D","198805262010122 001","Perancang Ahli Muda","POKJA 1","Provinsi Papua;Kota Jayapura;Kabupaten Jayapura;Kabupaten Keerom;Kabupaten Sarmi;Kabupaten Waropen;Kabupaten Mamberamo;Kabupaten Mamberamo Raya;Kabupaten Kepulauan Yapen;Kabupaten Biak Numfor;Kabupaten Supiori;Provinsi Papua Selatan;DPRD Kabupaten Merauke;KabupatenBoven Digoel;Kabupaten Mappi;Kabupaten Asmat;Provinsi Papua Tengah;Kabupaten Nabire;Kabupaten Puncak Jaya;Kabupaten Paniai;Kabupaten Mimika;Kabupaten Puncak;Kabupaten Dogiyai;Kabupaten Intan Jaya;Kabupaten Deiyai;Provinsi Papua Pegunungan;Kabupaten Jayawijaya;Kabupaten Pegunungan Bintang;Kabupaten Yahukimo;Kabupaten Tolikara;Kabupaten Yalimo;Kabupaten Lanny Jaya;Kabupaten Nduga;","<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/riwayat_perancang\/12\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/12\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/12\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"],["Ariyanto Ishak","19771007200912 1001","Perancang Ahli Muda","POKJA 1","Kabupaten Pohuwato; Kabupaten Boalemo; Kabupaten Gorontalo","<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/riwayat_perancang\/13\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/13\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/13\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"],["NAME A2","19881004 201212 2 001","Perancang Ahli Pertama","Pokja II","Provinsi Papua;Kota Jayapura;Kabupaten Jayapura;Kabupaten Keerom;Kabupaten Sarmi;Kabupaten Waropen;Kabupaten Mamberamo;Kabupaten Mamberamo Raya;Kabupaten Kepulauan Yapen;Kabupaten Biak Numfor;Kabupaten Supiori;Provinsi Papua Selatan;DPRD Kabupaten Merauke;KabupatenBoven Digoel;Kabupaten Mappi;Kabupaten Asmat;Provinsi Papua Tengah;Kabupaten Nabire;Kabupaten Puncak Jaya;Kabupaten Paniai;Kabupaten Mimika;Kabupaten Puncak;Kabupaten Dogiyai;Kabupaten Intan Jaya;Kabupaten Deiyai;Provinsi Papua Pegunungan;Kabupaten Jayawijaya;Kabupaten Pegunungan Bintang;Kabupaten Yahukimo;Kabupaten Tolikara;Kabupaten Yalimo;Kabupaten Lanny Jaya;Kabupaten Nduga;","<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/riwayat_perancang\/15\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/15\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/15\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"],["F","198005152002121001","Perancang Ahli Madya Merangkap Kepala Sub Bidang Fasilitasi Pembentukan Produk Hukum Daerah ","Pokja II","Provinsi Papua;Kota Jayapura;Kabupaten Jayapura;Kabupaten Keerom;Kabupaten Sarmi;Kabupaten Waropen;Kabupaten Mamberamo;Kabupaten Mamberamo Raya;Kabupaten Kepulauan Yapen;Kabupaten Biak Numfor;Kabupaten Supiori;Provinsi Papua Selatan;DPRD Kabupaten Merauke;KabupatenBoven Digoel;Kabupaten Mappi;Kabupaten Asmat;Provinsi Papua Tengah;Kabupaten Nabire;Kabupaten Puncak Jaya;Kabupaten Paniai;Kabupaten Mimika;Kabupaten Puncak;Kabupaten Dogiyai;Kabupaten Intan Jaya;Kabupaten Deiyai;Provinsi Papua Pegunungan;Kabupaten Jayawijaya;Kabupaten Pegunungan Bintang;Kabupaten Yahukimo;Kabupaten Tolikara;Kabupaten Yalimo;Kabupaten Lanny Jaya;Kabupaten Nduga;","<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/riwayat_perancang\/16\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/16\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/16\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"],["Oktafiani Dungga","19871030 200912 2 006","Perancang Ahli Muda","Pokja II","Provinsi Papua;Kota Jayapura;Kabupaten Jayapura;Kabupaten Keerom;Kabupaten Sarmi;Kabupaten Waropen;Kabupaten Mamberamo;Kabupaten Mamberamo Raya;Kabupaten Kepulauan Yapen;Kabupaten Biak Numfor;Kabupaten Supiori;Provinsi Papua Selatan;DPRD Kabupaten Merauke;KabupatenBoven Digoel;Kabupaten Mappi;Kabupaten Asmat;Provinsi Papua Tengah;Kabupaten Nabire;Kabupaten Puncak Jaya;Kabupaten Paniai;Kabupaten Mimika;Kabupaten Puncak;Kabupaten Dogiyai;Kabupaten Intan Jaya;Kabupaten Deiyai;Provinsi Papua Pegunungan;Kabupaten Jayawijaya;Kabupaten Pegunungan Bintang;Kabupaten Yahukimo;Kabupaten Tolikara;Kabupaten Yalimo;Kabupaten Lanny Jaya;Kabupaten Nduga;","<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/riwayat_perancang\/20\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/20\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/20\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"],["J","198405082012121001","Perancang Ahli Muda","Pokja II","Provinsi Papua;Kota Jayapura;Kabupaten Jayapura;Kabupaten Keerom;Kabupaten Sarmi;Kabupaten Waropen;Kabupaten Mamberamo;Kabupaten Mamberamo Raya;Kabupaten Kepulauan Yapen;Kabupaten Biak Numfor;Kabupaten Supiori;Provinsi Papua Selatan;DPRD Kabupaten Merauke;KabupatenBoven Digoel;Kabupaten Mappi;Kabupaten Asmat;Provinsi Papua Tengah;Kabupaten Nabire;Kabupaten Puncak Jaya;Kabupaten Paniai;Kabupaten Mimika;Kabupaten Puncak;Kabupaten Dogiyai;Kabupaten Intan Jaya;Kabupaten Deiyai;Provinsi Papua Pegunungan;Kabupaten Jayawijaya;Kabupaten Pegunungan Bintang;Kabupaten Yahukimo;Kabupaten Tolikara;Kabupaten Yalimo;Kabupaten Lanny Jaya;Kabupaten Nduga;","<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/riwayat_perancang\/21\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/21\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/21\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"],["K","19890628 201212 2 001","Perancang Ahli Pertama","Pokja II","Provinsi Papua;Kota Jayapura;Kabupaten Jayapura;Kabupaten Keerom;Kabupaten Sarmi;Kabupaten Waropen;Kabupaten Mamberamo;Kabupaten Mamberamo Raya;Kabupaten Kepulauan Yapen;Kabupaten Biak Numfor;Kabupaten Supiori;Provinsi Papua Selatan;DPRD Kabupaten Merauke;KabupatenBoven Digoel;Kabupaten Mappi;Kabupaten Asmat;Provinsi Papua Tengah;Kabupaten Nabire;Kabupaten Puncak Jaya;Kabupaten Paniai;Kabupaten Mimika;Kabupaten Puncak;Kabupaten Dogiyai;Kabupaten Intan Jaya;Kabupaten Deiyai;Provinsi Papua Pegunungan;Kabupaten Jayawijaya;Kabupaten Pegunungan Bintang;Kabupaten Yahukimo;Kabupaten Tolikara;Kabupaten Yalimo;Kabupaten Lanny Jaya;Kabupaten Nduga;","<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/riwayat_perancang\/22\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/22\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/22\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"],["R","19900202 201212 2 002","Perancang Ahli Pertama","POKJA 1","","<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/riwayat_perancang\/24\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/24\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/24\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"],["NAME2","198709102012121001","Perancang Ahli Pertama","POKJA 1","Provinsi Papua;Kota Jayapura;Kabupaten Jayapura;Kabupaten Keerom;Kabupaten Sarmi;Kabupaten Waropen;Kabupaten Mamberamo;Kabupaten Mamberamo Raya;Kabupaten Kepulauan Yapen;Kabupaten Biak Numfor;Kabupaten Supiori;Provinsi Papua Selatan;DPRD Kabupaten Merauke;KabupatenBoven Digoel;Kabupaten Mappi;Kabupaten Asmat;Provinsi Papua Tengah;Kabupaten Nabire;Kabupaten Puncak Jaya;Kabupaten Paniai;Kabupaten Mimika;Kabupaten Puncak;Kabupaten Dogiyai;Kabupaten Intan Jaya;Kabupaten Deiyai;Provinsi Papua Pegunungan;Kabupaten Jayawijaya;Kabupaten Pegunungan Bintang;Kabupaten Yahukimo;Kabupaten Tolikara;Kabupaten Yalimo;Kabupaten Lanny Jaya;Kabupaten Nduga;","<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/riwayat_perancang\/25\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/25\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/25\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"],["A2,"198908132010122001","Perancang Ahli Pertama","Pokja II","Provinsi Papua;Kota Jayapura;Kabupaten Jayapura;Kabupaten Keerom;Kabupaten Sarmi;Kabupaten Waropen;Kabupaten Mamberamo;Kabupaten Mamberamo Raya;Kabupaten Kepulauan Yapen;Kabupaten Biak Numfor;Kabupaten Supiori;Provinsi Papua Selatan;DPRD Kabupaten Merauke;KabupatenBoven Digoel;Kabupaten Mappi;Kabupaten Asmat;Provinsi Papua Tengah;Kabupaten Nabire;Kabupaten Puncak Jaya;Kabupaten Paniai;Kabupaten Mimika;Kabupaten Puncak;Kabupaten Dogiyai;Kabupaten Intan Jaya;Kabupaten Deiyai;Provinsi Papua Pegunungan;Kabupaten Jayawijaya;Kabupaten Pegunungan Bintang;Kabupaten Yahukimo;Kabupaten Tolikara;Kabupaten Yalimo;Kabupaten Lanny Jaya;Kabupaten Nduga;","<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/riwayat_perancang\/26\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/26\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/26\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"],["C3","19840607 200912 1 002","Perancang Ahli Madya","POKJA 1","Provinsi Papua;Kota Jayapura;Kabupaten Jayapura;Kabupaten Keerom;Kabupaten Sarmi;Kabupaten Waropen;Kabupaten Mamberamo;Kabupaten Mamberamo Raya;Kabupaten Kepulauan Yapen;Kabupaten Biak Numfor;Kabupaten Supiori;Provinsi Papua Selatan;DPRD Kabupaten Merauke;KabupatenBoven Digoel;Kabupaten Mappi;Kabupaten Asmat;Provinsi Papua Tengah;Kabupaten Nabire;Kabupaten Puncak Jaya;Kabupaten Paniai;Kabupaten Mimika;Kabupaten Puncak;Kabupaten Dogiyai;Kabupaten Intan Jaya;Kabupaten Deiyai;Provinsi Papua Pegunungan;Kabupaten Jayawijaya;Kabupaten Pegunungan Bintang;Kabupaten Yahukimo;Kabupaten Tolikara;Kabupaten Yalimo;Kabupaten Lanny Jaya;Kabupaten Nduga;","<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/riwayat_perancang\/30\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/30\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/30\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"],["D2","19800606 200604 1 003","Perancang Ahli Madya","Pokja II","Provinsi Papua;Kota Jayapura;Kabupaten Jayapura;Kabupaten Keerom;Kabupaten Sarmi;Kabupaten Waropen;Kabupaten Mamberamo;Kabupaten Mamberamo Raya;Kabupaten Kepulauan Yapen;Kabupaten Biak Numfor;Kabupaten Supiori;Provinsi Papua Selatan;DPRD Kabupaten Merauke;KabupatenBoven Digoel;Kabupaten Mappi;Kabupaten Asmat;Provinsi Papua Tengah;Kabupaten Nabire;Kabupaten Puncak Jaya;Kabupaten Paniai;Kabupaten Mimika;Kabupaten Puncak;Kabupaten Dogiyai;Kabupaten Intan Jaya;Kabupaten Deiyai;Provinsi Papua Pegunungan;Kabupaten Jayawijaya;Kabupaten Pegunungan Bintang;Kabupaten Yahukimo;Kabupaten Tolikara;Kabupaten Yalimo;Kabupaten Lanny Jaya;Kabupaten Nduga;","<div class=\"text-end\">\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/riwayat_perancang\/31\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-search-plus\"><\/i> Detail<\/a>\n\t\t\t\t\t\t\t<a href=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/edit\/31\" class=\"btn btn-info waves-effect waves-light\"><i class=\"fa fa-edit\"><\/i> Edit<\/a>\n\t\t\t\t\t\t\t<a href=\"javascript:void(0)\" url=\"https:\/\/localhost/forfapeda.web.id\/harmoni\/perancang\/delete\/31\" onclick=\"deleteRecord(this)\" class=\"btn btn-danger waves-effect waves-light\"><i class=\"fas fa-trash-alt\"><\/i> Hapus<\/a>\n\t\t\t\t\t\t<\/div>"]]}

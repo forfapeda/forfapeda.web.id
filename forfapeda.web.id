@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en" class="h-500">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1-0">
+	<meta name="description" content="">
+	<meta name="author" content="forfapeda, and Bootstrap contributors">
+	<meta name="generator" content="Hugo 0.108.0">
+	<title>Planet KD1997</title>
+
+	<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka One:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400;700&display=swap" rel="stylesheet">
+	</script>
+
+	<!-- Favicons -->
+	<meta name="theme-color" content="#712cf9">
+
+
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+
+		.b-example-divider {
+			height: 3rem;
+			background-color: rgba(0, 0, 0, .1);
+			border: solid rgba(0, 0, 0, .15);
+			border-width: 1px 0;
+			box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+		}
+
+		.b-example-vr {
+			flex-shrink: 0;
+			width: 1.5rem;
+			height: 100vh;
+		}
+
+		.bi {
+			vertical-align: -.125em;
+			fill: currentColor;
+		}
+
+		.nav-scroller {
+			position: relative;
+			z-index: 2;
+			height: 2.75rem;
+			overflow-y: hidden;
+		}
+
+		.nav-scroller .nav {
+			display: flex;
+			flex-wrap: nowrap;
+			padding-bottom: 1rem;
+			margin-top: -1px;
+			overflow-x: auto;
+			text-align: center;
+			white-space: nowrap;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		/*
+ * Globals
+ */
+
+
+		/* Custom default button */
+		.btn-light,
+		.btn-light:hover,
+		.btn-light:focus {
+			color: #333;
+			text-shadow: none;
+			/* Prevent inheritance from `body` */
+		}
+
+
+		/*
+ * Base structure
+ */
+
+		body {
+			text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+			box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+		}
+
+		.cover-container {
+			/* background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(img/logo_kejari.png); */
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1579403124614-197f69d8187b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80);
+			/* background: url(img/02.png), linear-gradient(180deg, #213b52 0%, #213c54 35%, #204564 100%); */
+			/* background-image: url(img/jak.jpg); */
+			/* background-color: #273036;*/
+			/* background-image: url(https://images.unsplash.com/photo-1579403124614-197f69d8187b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80); */
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position:  center;
+		}
+
+		main {
+			max-width: 42em;
+		}
+
+
+		/*
+ * Header
+ */
+
+		.nav-masthead .nav-link {
+			color: rgba(255, 255, 255, .5);
+			border-bottom: .25rem solid transparent;
+		}
+
+		.nav-masthead .nav-link:hover,
+		.nav-masthead .nav-link:focus {
+			border-bottom-color: rgba(255, 255, 255, .25);
+		}
+
+		.nav-masthead .nav-link+.nav-link {
+			margin-left: 1rem;
+		}
+
+		.nav-masthead .active {
+			color: #fff;
+			border-bottom-color: #fff;
+		}
+
+		a {
+    text-decoration: none;
+}
+
+		.section.work {
+    padding-bottom: 0em;
+}
+.section {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    padding-top: 10.75em;
+    padding-bottom: 10.75em;
+}
+
+		.row.work {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+}
+
+		.work-left-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 38.625em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+}
+
+.work-right-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 38.625em;
+    margin-top: 6em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+}
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+.work-item {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 43.75em;
+    padding: 3em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 56px 1fr 56px;
+    grid-template-columns: 56px 1fr 56px;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    border-radius: 1.5em;
+    color: #e4ded7;
+}
+
+
+.image.work {
+    z-index: -1;
+}
+.image {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+will-change: opacity;
+.overlay.work {
+    background-color: #0e1016;
+    opacity: 0;
+    mix-blend-mode: normal;
+	
+}
+
+.overlay.work:hover {
+    opacity: 0.9 !important;
+	/* background-color: red; */
+    
+}
+.overlay {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #0e1016;
+    mix-blend-mode: color;
+}
+
+.image-contain.work-decoration {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    -webkit-transform: translate(-3em, 3em);
+    -ms-transform: translate(-3em, 3em);
+    transform: translate(-3em, 3em);
+}
+.image-contain {
+    position: relative;
+}
+
+.margin-24 {
+    margin-bottom: 1.5em;
+}
+
+.z-index-5 {
+    position: relative;
+    z-index: 5;
+}
+.caps {
+    text-transform: uppercase;
+}
+.text-display-5 {
+    font-family: 'Mona sans', sans-serif;
+    font-size: 2.5em;
+    line-height: 0.9;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+	</style>
+</head>
+
+<body class="h-100 text-bg-dark">
+
+	<div class="container-fluid cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<header class="mb-auto">
+
+		</header>
+
+		<main class="px-3 mx-auto">
+			<h1 style="font-size: calc(5vw + 5vh + 5vmin);
+    
+    opacity: .8;
+    color: #fff;"><span style="color:#b2b2b2; font-family: 'Pacifico', sans-serif;">Halo! Saya</span><br><span
+					class="fw-normal" style="font-size: calc(0.5vw + 1vh + 3.5vmin); font-family: 'Fredoka One', sans-serif;">MARINUS ANINAM
+					</span></h1>
+			<p style="    font-size: calc(10px + (22 - 10) * ((100vw - 300px)/ (1300 - 300)));
+    letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px)/ (1300 - 300)));
+	color: #efefef;
+    opacity: .8;">WEB DEVELOPER</p>
+			<p class="lead visually-none">
+				<a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">FOR FAPEDA | Forum Fasilitasi Peraturan Daerah</a>
+			</p>
+
+            <p class="color: #efefef; visually-none ">
+				<a href="#" class=" fw-normal" style="font-family: 'Fredoka One', sans-serif;">Provinsi Papua   | Provinsi Papua Tengah | Provinsi Papua Selatan    | Provinsi Papua Pegunungan</a>
+			</p>
+		</main>
+
+		<div class="mt-auto text-white-50">
+
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+		< script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+		integrity = "sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+		crossorigin = "anonymous" >
+	</script>
+
+</body>
+
+</html>

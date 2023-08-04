@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>AVATAR | Aplikasi Validasi Data Harmonisasi</title>
+	<!-- Favicon icon -->
+	<!-- <link rel="icon" type="image/png" sizes="16x16" href="https://husmin.web.id/harmoni/assets/images/logo-app.png"> -->
+	<!-- Custom CSS -->
+	<link href="https://husmin.web.id/harmoni/templates/backend/css/style.min.css" rel="stylesheet">
+	<link href="https://husmin.web.id/harmoni/templates/backend/css/custom.css" rel="stylesheet">
+	<link href="https://husmin.web.id/harmoni/templates/backend/css/right_sidebar_menu.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://husmin.web.id/harmoni/templates/backend/plugins/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="https://husmin.web.id/harmoni/assets/js/js.cookie.js"></script>
+	<!-- Bootstrap tether Core JavaScript -->
+	<script src="https://husmin.web.id/harmoni/templates/backend/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="https://husmin.web.id/harmoni/assets/blockUI/jquery.blockUI.js"></script>
+</head>
+
+<body class="fixed-layout skin-megna-dark">
+	<!-- ============================================================== -->
+	<!-- Preloader - style you can find in spinners.css -->
+	<!-- ============================================================== -->
+	<div class="preloader">
+		<div class="loader">
+			<div class="loader__figure"></div>
+			<p class="text-center loader__label">AVATAR</p>
+		</div>
+	</div>
+	<!-- ============================================================== -->
+	<!-- Main wrapper - style you can find in pages.scss -->
+	<!-- ============================================================== -->
+	<div id="main-wrapper">
+		<!-- ============================================================== -->
+		<!-- Topbar header - style you can find in pages.scss -->
+		<!-- ============================================================== -->
+		<header class="topbar">
+			<nav class="navbar top-navbar navbar-expand-md navbar-dark">
+				<!-- ============================================================== -->
+				<!-- Logo -->
+				<!-- ============================================================== -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="https://husmin.web.id/harmoni/">
+						<!-- Logo icon -->
+						<b>
+							<!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+							<!-- Light Logo icon -->
+							<i class="wi wi-sunset light-logo"></i>
+							<!-- <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" /> -->
+						</b>
+						<!--End Logo icon -->
+						<!-- Logo text -->
+						<span>
+							<h3 class="mx-1 text-white fw-bold my-0 light-logo">AVATAR</h3>
+						</span>
+					</a>
+				</div>
+				<!-- ============================================================== -->
+				<!-- End Logo -->
+				<!-- ============================================================== -->
+				<div class="navbar-collapse">
+					<!-- ============================================================== -->
+					<!-- toggle and nav items -->
+					<!-- ============================================================== -->
+					<ul class="navbar-nav me-auto">
+						<!-- This is  -->
+						<li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+						<li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+					</ul>
+					<!-- ============================================================== -->
+					<!-- User profile and search -->
+					<!-- ============================================================== -->
+					<ul class="navbar-nav my-lg-0">
+						<!-- ============================================================== -->
+						<!-- User Profile -->
+						<!-- ============================================================== -->
+						<li class="nav-item dropdown u-pro">
+							<a class="text-white nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="">Admin &nbsp;<i class="fa fa-angle-down"></i></span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end animated flipInY">
+								<!-- <a href="javascript:void(0)" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+								<a href="javascript:void(0)" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
+								<a href="javascript:void(0)" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
+								<div class="dropdown-divider"></div> -->
+								<a href="https://husmin.web.id/harmoni/pengguna/edit/admin" class="dropdown-item"><i class="ti-settings"></i> Pengaturan Akun</a>
+								<div class="dropdown-divider"></div>
+								<a href="https://husmin.web.id/harmoni/keluar" class="dropdown-item text-danger"><i class="fa fa-power-off"></i> Logout</a>
+								<!-- text-->
+							</div>
+						</li>
+						<!-- ============================================================== -->
+						<!-- End User Profile -->
+						<!-- ============================================================== -->
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- ============================================================== -->
+		<!-- End Topbar header -->
+		<!-- ============================================================== -->
+		<!-- ============================================================== -->
+		<!-- Left Sidebar - style you can find in sidebar.scss  -->
+		<!-- ============================================================== -->
+				<aside class="left-sidebar">
+			<!-- Sidebar scroll-->
+			<div class="scroll-sidebar">
+				<!-- Sidebar navigation-->
+				<nav class="sidebar-nav">
+					<ul id="sidebarnav">
+						<li class="user-pro"> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+								<i class="fas fa-user-circle"></i> <span class="hide-menu">Admin</span>
+							</a>
+							<ul aria-expanded="false" class="collapse">
+								<li><a href="javascript:void(0)"><i class="icon-user"></i> Akun</a></li>
+								<li><a href="https://husmin.web.id/harmoni/keluar"><i class="fa fa-power-off text-danger"></i> Logout</a></li>
+							</ul>
+						</li>
+						<li class="nav-small-cap">--- NAVIGATION</li>
+						<li> <a class="waves-effect waves-dark" href="https://husmin.web.id/harmoni/dashboard" aria-expanded="false"><i class="ti-layout-grid2"></i><span class="hide-menu">Dashboard</span></a></li>
+						<!-- <li> <a class="waves-effect waves-dark" href="https://husmin.web.id/harmoni/harmonisasi" aria-expanded="false"><i class="far fa-envelope-open"></i><span class="hide-menu">Permohonan</span></a></li> -->
+						<li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-inbox"></i><span class="hide-menu">Permohonan</span></a>
+							<ul aria-expanded="false" class="collapse">
+								<li><a href="https://husmin.web.id/harmoni/penyusunan">Penyusunan Rancangan Produk Hukum</a></li>
+								<li><a href="https://husmin.web.id/harmoni/harmonisasi">Harmonisasi Rancangan Produk Hukum</a></li>
+							</ul>
+						</li>
+						<li> <a class="waves-effect waves-dark" href="https://husmin.web.id/harmoni/perancang" aria-expanded="false"><i class="far fa-id-card"></i><span class="hide-menu">Tim Perancang</span></a></li>
+						<li> <a class="waves-effect waves-dark" href="https://husmin.web.id/harmoni/pokja" aria-expanded="false"><i class="icon-people"></i><span class="hide-menu">Kelompok Kerja</span></a></li>
+						<li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="far fa-folder-open"></i><span class="hide-menu">Data Master</span></a>
+							<ul aria-expanded="false" class="collapse">
+								<li><a href="https://husmin.web.id/harmoni/wilayah">Wilayah</a></li>
+								<li><a href="https://husmin.web.id/harmoni/pemrakarsa">Pengusul Inisiatif</a></li>
+								<li><a href="https://husmin.web.id/harmoni/bidang">Bidang</a></li>
+								<li><a href="https://husmin.web.id/harmoni/kadiv">Kepala Divisi YANKUMHAM</a></li>
+							</ul>
+						</li>
+						<!-- <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-chart-bar"></i><span class="hide-menu">Laporan</span></a>
+							<ul aria-expanded="false" class="collapse">
+								<li><a href="https://husmin.web.id/harmoni/laporan/daftar_permohonan">Daftar Permohonan</a></li>
+								<li><a href="https://husmin.web.id/harmoni/laporan/rekap_permohonan">Rekapitulasi</a></li>
+							</ul>
+						</li> -->
+						<li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-chart-bar"></i><span class="hide-menu">Laporan</span></a>
+							<ul aria-expanded="false" class="collapse">
+								<li> <a class="has-arrow" href="javascript:void(0)" aria-expanded="false">Penyusunan Rancangan Produk Hukum</a>
+									<ul aria-expanded="false" class="collapse">
+										<li><a href="https://husmin.web.id/harmoni/laporan/daftar_penyusunan">Daftar Permohonan</a></li>
+										<li><a href="https://husmin.web.id/harmoni/laporan/rekap_penyusunan">Rekapitulasi</a></li>
+									</ul>
+								</li>
+								<li> <a class="has-arrow" href="javascript:void(0)" aria-expanded="false">Harmonisasi Rancangan Produk Hukum</a>
+									<ul aria-expanded="false" class="collapse">
+										<li><a href="https://husmin.web.id/harmoni/laporan/daftar_permohonan">Daftar Permohonan</a></li>
+										<li><a href="https://husmin.web.id/harmoni/laporan/rekap_permohonan">Rekapitulasi</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<!-- <li> <a class="waves-effect waves-dark" href="https://husmin.web.id/harmoni/perancang" aria-expanded="false"><i class="far fa-user-circle"></i><span class="hide-menu">KADIV HUMHAM</span></a></li> -->
+						<li> <a class="waves-effect waves-dark" href="https://husmin.web.id/harmoni/keluar" aria-expanded="false"><i class="fas fa-power-off text-danger"></i><span class="hide-menu">Logout</span></a></li>
+					</ul>
+				</nav>
+				<!-- End Sidebar navigation -->
+			</div>
+			<!-- End Sidebar scroll-->
+		</aside>
+		<!-- ============================================================== -->
+		<!-- End Left Sidebar - style you can find in sidebar.scss  -->
+		<!-- ============================================================== -->
+		<!-- ============================================================== -->
+		<!-- Page wrapper  -->
+		<!-- ============================================================== -->
+		<div class="page-wrapper">
+			<!-- ============================================================== -->
+			<!-- Container fluid  -->
+			<!-- ============================================================== -->
+			<div class="container-fluid">
+				<!-- ============================================================== -->
+				<!-- Bread crumb and right sidebar toggle -->
+				<!-- ============================================================== -->
+				<div class="row page-titles">
+					<div class="col-md-5 col-8 align-self-center">
+						<h4 class="text-themecolor">PERMOHONAN HARMONISASI</h4>
+					</div>
+					<div class="col-md-7 col-4 align-self-center text-end">
+						<div class="d-flex justify-content-end align-items-center">
+							<!-- <ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="https://husmin.web.id/harmoni/dashboard">Dashboard</a></li>
+								<li class="breadcrumb-item active">Dashboard 1</li>
+							</ol> -->
+							<a href="javascript:void(0)" onClick="parent.history.back(); return false;" class="btn btn-cyan m-l-15 text-white waves-effect waves-light"><i class="fas fa-angle-left"></i> Kembali</a>						</div>
+					</div>
+				</div>
+				<!-- ============================================================== -->
+				<!-- End Bread crumb and right sidebar toggle -->
+				<!-- ============================================================== -->
+				<!-- ============================================================== -->
+				<!-- Start Page Content -->
+				<!-- ============================================================== -->
+				<link href="https://husmin.web.id/harmoni/assets/select2/css/select2.min.css" rel="stylesheet">
+<link href="https://husmin.web.id/harmoni/assets/select2/css/select2-bootstrap5.min.css" rel="stylesheet">
+<link href="https://husmin.web.id/harmoni/assets/daterangepicker/daterangepicker.min.css" rel="stylesheet">
+
+<div class="row">
+	<!-- Column -->
+	<div class="col-lg-4 col-xlg-3 col-md-5">
+		<div class="card">
+			<div class="card-header bg-info">
+				<h4 class="m-b-0 text-white">Detail Permohonan Tim Perancang</h4>
+			</div>
+			<div class="card-body">
+				<center class="m-t-30">
+					<h3 class="card-title m-t-10">Rancangan Peraturan Daerah tentang Penyelenggaraan Kerarsipan</h3>
+					<h5>Rancangan Peraturan Daerah Provinsi Gorontalo</h5>
+					<h5 class="card-subtitle">Pemerintah Daerah Provinsi Gorontalo</h5>
+				</center>
+			</div>
+			<div>
+				<hr>
+			</div>
+			<div class="card-body">
+				<div class="row">
+					<div class="col-md-6">
+						<h6 class="text-muted mb-1">Surat Permohonan </h6>
+						<h5>000.5.1/031/2023</h5>
+						<h6 class="text-muted mb-1 pt-3 db">Tanggal Surat</h6>
+						<h5>10 Januari 2023</h5>
+					</div>
+					<div class="col-md-6 text-end">
+						<h6 class="text-muted mb-1">Bidang </h6>
+						<h5>Kearsipan</h5>
+						<h6 class="text-muted mb-1 pt-3 db">Surat Permohonan</h6>
+						<a class="btn btn-secondary btn-sm" href="https://husmin.web.id/harmoni/uploads/penyusunan/Permohonan_Peny_Ranperda.pdf"><i class="fa fa-download"></i> Surat Permohonan</a>
+					</div>
+				</div>
+			</div>
+			<div class="card-body bg-light mt-4">
+				<h3 class="font-light m-0">TIM PERANCANG</h3>
+				<h5 class="font-light m-t-0">Zonasi: Provinsi Gorontalo</h5>
+			</div>
+			<div class="table-responsive">
+				<table class="table table-hover no-wrap">
+					<thead>
+						<tr>
+							<th class="text-center">#</th>
+							<th>NAMA</th>
+							<th>JABATAN</th>
+						</tr>
+					</thead>
+					<tbody class="tim-perancang">
+						<tr>
+								<td id="id_perancang_16" class="text-center">1</td>
+								<td class="txt-oflo">Jefri S.Pakaya</td>
+								<td class="txt-oflo">Perancang Ahli Madya Merangkap Kepala Sub Bidang Fasilitasi Pembentukan Produk Hukum Daerah </td>
+							</tr><tr>
+								<td id="id_perancang_31" class="text-center">2</td>
+								<td class="txt-oflo">Kodrat Wahyudi Mohune</td>
+								<td class="txt-oflo">Perancang Ahli Madya</td>
+							</tr>					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- Column -->
+	<!-- Column -->
+	<div class="col-lg-8 col-xlg-9 col-md-7">
+		<div class="card block">
+			<div class="card-header bg-info">
+				<h4 class="m-b-0 text-white">Form Permohonan Harmonisasi</h4>
+			</div>
+			<div class="card-body">
+				<form method="post" accept-charset="utf-8" action="" class="row" id="formInput">
+					<input type="hidden" id="csrf_mdn_kl" name="csrf_mdn_kl" />
+					<input type="hidden" name="id_penyusunan" value="9" />
+					<div class="col-md-12">
+						<div class="form-group position-relative">
+							<label for="judul_produk_hukum" class="col-form-label">Judul Rancangan Produk Hukum</label>
+							<input type="text" class="form-control is-valid" required id="judul_produk_hukum" name="judul_produk_hukum" placeholder="Judul Rancangan Produk Hukum" value="Rancangan Peraturan Daerah tentang Penyelenggaraan Kerarsipan">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group position-relative">
+							<label for="inputJP" class="col-form-label">Jenis Produk Hukum</label>
+							<select class="form-control form-select is-valid" tabindex="-1" aria-hidden="true" required id="inputJP" name="jenis_produk_hukum" placeholder="Jenis Produk Hukum">
+								<option selected value="Peraturan Daerah">Peraturan Daerah</option>
+								<option  value="Peraturan Kepala Daerah">Peraturan Kepala Daerah</option>
+							</select>
+						</div>
+						<div class="form-group position-relative">
+							<label for="inputPemrakarsa" class="col-form-label">Pengusul Inisiatif</label>
+							<select class="form-control form-select is-valid" tabindex="-1" aria-hidden="true" required id="inputPemrakarsa" name="id_pemrakarsa" placeholder="Pemrakarsa">
+								<option value="">-- Silakan Pilih Pengusul Inisiatif --</option>
+								<option  value="6">DPRD Kabupaten Boalemo</option><option  value="11">DPRD Kabupaten Gorontalo</option><option  value="14">DPRD Kabupaten Gorontalo Utara</option><option  value="12">DPRD Kabupaten Pohuwato</option><option  value="4">DPRD Kota Gorontalo</option><option  value="9">DPRD Kota Gorontalo</option><option  value="8">DPRD Provinsi Gorontalo</option><option  value="5">Pemerintah Daerah Kabupaten Boalemo</option><option  value="16">Pemerintah Daerah Kabupaten Gorontalo</option><option  value="15">Pemerintah Daerah Kabupaten Gorontalo Utara</option><option  value="13">Pemerintah Daerah Kabupaten Pohuwato</option><option  value="10">Pemerintah Daerah Kota Gorontalo</option><option selected value="7">Pemerintah Daerah Provinsi Gorontalo</option>							</select>
+						</div>
+						<div class="form-group position-relative">
+							<label for="judul_surat_permohonan" class="col-form-label">Nomor Surat Permohonan</label>
+							<input type="text" class="form-control" required id="judul_surat_permohonan" name="judul_surat_permohonan" placeholder="Nomor Surat Permohonan">
+						</div>
+						<div class="form-group position-relative">
+							<label for="inputTglSuratMask" class="form-label">Tanggal Surat Permohonan</label>
+							<input class="form-control form-select" null="false" id="inputTglSuratMask" placeholder="Tanggal Surat Permohonan" type="text" style="cursor:pointer">
+							<input id="inputTglSurat" type="hidden" name="tanggal_surat_permohonan" value="">
+						</div>
+						<div class="form-group position-relative">
+							<label for="file_surat" class="col-form-label">Berkas Surat Permohonan</label>
+							<input type="file" class="form-control" id="file_surat" name="file_surat" placeholder="Berkas Surat Permohonan">
+						</div>
+						<div class="form-group position-relative">
+							<label for="inputTglPermohonanMask" class="form-label">Tanggal Permohonan Diterima</label>
+							<input class="form-control form-select" null="false" id="inputTglPermohonanMask" placeholder="Tanggal Permohonan" type="text" style="cursor:pointer">
+							<input id="inputTglPermohonan" type="hidden" name="tanggal_input" value="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group position-relative">
+							<label for="inputBidang" class="col-form-label">Bidang Terkait</label>
+							<select class="form-control form-select is-valid" tabindex="-1" aria-hidden="true" required id="inputBidang" name="id_bidang" placeholder="Bidang Terkait">
+								<option value="0">-- Silakan Pilih Bidang --</option>
+								<option  value="13" id-pokja="4" nama-pokja="Pokja II">Admnistrasi Kependudukan dan Pencacatan Sipil</option><option  value="3" id-pokja="1" nama-pokja="POKJA 1">Ekonomi</option><option  value="39" id-pokja="1" nama-pokja="POKJA 1">Energi dan Sumber Daya Mineral</option><option  value="47" id-pokja="4" nama-pokja="Pokja II">Inovasi Daerah</option><option  value="19" id-pokja="4" nama-pokja="Pokja II">Kearsipan</option><option selected value="46" id-pokja="5" nama-pokja="Pokja II">Kearsipan</option><option  value="18" id-pokja="4" nama-pokja="Pokja II">Kebudayaan</option><option  value="21" id-pokja="4" nama-pokja="Pokja II">Kehutanan</option><option  value="21" id-pokja="1" nama-pokja="POKJA 1">Kehutanan</option><option  value="36" id-pokja="1" nama-pokja="POKJA 1">Kelautan dan Perikanan</option><option  value="33" id-pokja="1" nama-pokja="POKJA 1">Kepemudaan dan Olah Raga</option><option  value="4" id-pokja="4" nama-pokja="Pokja II">Kesehatan</option><option  value="26" id-pokja="1" nama-pokja="POKJA 1">Ketentraman dan Keterbitan Umum serta Perlindungan</option><option  value="41" id-pokja="1" nama-pokja="POKJA 1">Keuangan</option><option  value="41" id-pokja="4" nama-pokja="Pokja II">Keuangan</option><option  value="15" id-pokja="4" nama-pokja="Pokja II">Komunikasi dan Informatika</option><option  value="31" id-pokja="1" nama-pokja="POKJA 1">Koperasi</option><option  value="28" id-pokja="1" nama-pokja="POKJA 1">Lingkungan Hidup</option><option  value="43" id-pokja="1" nama-pokja="POKJA 1">Organisasi dan Tata kerja</option><option  value="27" id-pokja="1" nama-pokja="POKJA 1">Pangan</option><option  value="20" id-pokja="4" nama-pokja="Pokja II">Pariwisata</option><option  value="25" id-pokja="1" nama-pokja="POKJA 1">Pekerjaan Umum dan Penataan Ruang</option><option  value="29" id-pokja="1" nama-pokja="POKJA 1">Pemberdayaan masyarakat Desa</option><option  value="11" id-pokja="4" nama-pokja="Pokja II">Pemberdayaan Perempuan dan  Perlindungan Anak</option><option  value="11" id-pokja="1" nama-pokja="POKJA 1">Pemberdayaan Perempuan dan  Perlindungan Anak</option><option  value="44" id-pokja="1" nama-pokja="POKJA 1">Pemerintahan</option><option  value="16" id-pokja="4" nama-pokja="Pokja II">Penanaman Modal</option><option  value="14" id-pokja="4" nama-pokja="Pokja II">Pengendalian Penduduk dan Keluarga Berencana</option><option  value="22" id-pokja="4" nama-pokja="Pokja II">Perdagangan</option><option  value="30" id-pokja="1" nama-pokja="POKJA 1">Perhubungan</option><option  value="40" id-pokja="1" nama-pokja="POKJA 1">Perindustrian</option><option  value="35" id-pokja="1" nama-pokja="POKJA 1">Perpustakaan</option><option  value="34" id-pokja="1" nama-pokja="POKJA 1">Persandian</option><option  value="12" id-pokja="4" nama-pokja="Pokja II">Pertanahan</option><option  value="2" id-pokja="1" nama-pokja="POKJA 1">Pertanian</option><option  value="37" id-pokja="1" nama-pokja="POKJA 1">Pertanian</option><option  value="9" id-pokja="4" nama-pokja="Pokja II">Perumahan Rakyat dan Kawasan Pemukiman</option><option  value="9" id-pokja="1" nama-pokja="POKJA 1">Perumahan Rakyat dan Kawasan Pemukiman</option><option  value="10" id-pokja="4" nama-pokja="Pokja II">Sosial</option><option  value="10" id-pokja="1" nama-pokja="POKJA 1">Sosial</option><option  value="17" id-pokja="4" nama-pokja="Pokja II">Statistik</option><option  value="17" id-pokja="1" nama-pokja="POKJA 1">Statistik</option><option  value="8" id-pokja="1" nama-pokja="POKJA 1">Tenaga Kerja</option><option  value="38" id-pokja="4" nama-pokja="Pokja II">Transmigrasi.</option><option  value="23" id-pokja="1" nama-pokja="POKJA 1">Transmigrasi.</option><option  value="45" id-pokja="1" nama-pokja="POKJA 1">umum</option><option  value="32" id-pokja="1" nama-pokja="POKJA 1">Usaha Kecil dan Menengah</option>							</select>
+						</div>
+						<!-- <div class="position-relative">
+									<label for="inputPokja" class="col-form-label">Kelompok Kerja</label>
+									<select class="form-control form-select" tabindex="-1" aria-hidden="true" required id="inputPokja" name="id_pokja" placeholder="Kelompok Kerja">
+										<option value="0">-- Silakan Pilih Kelompok Kerja --</option>
+										<option value="1">POKJA 1</option><option value="4">Pokja II</option><option value="5">Pokja II</option>									</select>
+								</div> -->
+						<div class="position-relative">
+							<label for="pokja" class="col-form-label">Kelompok Kerja</label>
+							<input type="text" readonly class="form-control text-dark" id="pokja">
+							<input type="hidden" id="id_pokja" name="id_pokja">
+						</div>
+						<table class="table table-tim">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Nama</th>
+									<th>NIP</th>
+									<th>Jabatan</th>
+								</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+					</div>
+
+					<div class="border-top pt-4 mt-5 text-center">
+						<button id="btnPreSubmit" type="button" class="btn btn-info" name="submit" value="submit"><i class="fa fa-save"></i> Simpan</button>
+						<button id="btnSubmit" role="input" type="button" class="visually-hidden btn btn-info" name="submit" value="submit"><i class="fa fa-save"></i> Simpan</button>
+						<button id="btnReset" type="reset" class="btn btn-danger"><i class="fa fa-times"></i> Batal</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Column -->
+</div>
+
+<link href="https://husmin.web.id/harmoni/assets/toast-master/css/jquery.toast.css" rel="stylesheet">
+<script src="https://husmin.web.id/harmoni/assets/toast-master/js/jquery.toast.js"></script>
+<script type="text/javascript">
+	function generate_notification(type, text) {
+		if (type == 'error') {
+			$.toast({
+				heading: 'Error',
+				text: text,
+				position: 'top-right',
+				loaderBg: '#ff6849',
+				icon: type,
+				hideAfter: false,
+				stack: 6
+			});
+		} else {
+			$.toast({
+				heading: type,
+				text: text,
+				position: 'top-right',
+				loaderBg: '#ff6849',
+				icon: type,
+				hideAfter: 4500,
+				// hideAfter: true,
+				stack: 6
+			});
+		}
+
+	}
+
+	function reset_warning_sign() {
+		$('[required]').each(function() {
+			$(this).removeClass('is-valid');
+		})
+	}
+
+	$("button#btnReset").click(function() {
+		reset_warning_sign();
+		$('#btnSubmit').attr('disabled', true);
+		$('#btnPreSubmit').attr('disabled', true);
+	});
+
+	/*save*/
+	$('button#btnSubmit').click(function() {
+		required_input = document.querySelectorAll('form#formInput [required]:not(.is-valid)');
+		// console.log(required_input);
+		if (required_input.length == 0) {
+			$("#csrf_mdn_kl").val(Cookies.get('harmoni_cookie'));
+			var formData = new FormData($('form#formInput')[0]);
+			$.ajax({
+				url: 'https://husmin.web.id/harmoni/harmonisasi/lanjut/9/' + $(this).attr("role"),
+				type: 'post',
+				dataType: 'json',
+				contentType: false,
+				cache: false,
+				processData: false,
+				data: formData,
+				beforeSend: function() {
+					$('div.block').block({
+						message: '<h4><i class="fa fa-spinner fa-pulse"></i> Sedang Memproses...</h4>',
+						css: {
+							border: '1px solid #fff'
+						}
+					});
+				},
+				complete: function() {
+					$('div.block').unblock();
+				},
+				success: function(data) {
+					if (data.success) {
+						generate_notification('success', data.success_message);
+						if ($('button#btnSubmit').attr("role") == 'input') {
+							// $('#btnSubmit').attr('disabled', true);
+							// $('#btnPreSubmit').attr('disabled', true);
+							$("form#formInput").trigger("reset");
+							reset_warning_sign();
+							if ($('#dataTable').length != 0) { //untuk mengetahui apakah file ini di-include di file yang ada datatable atau tidak
+								$('#dataTable').DataTable().draw(); //jika ada, maka reload datatable
+							}
+						}
+						if (typeof onSuccessCallback === "function") {
+							onSuccessCallback(data);
+						}
+					} else {
+						generate_notification('error', data.error_message);
+					}
+				},
+				error: function(jqXHR, textStatus, errorThrown) {
+					//cetak kesalahan seperti: error 404 - Not Found
+					generate_notification('error', textStatus + ' ' + jqXHR.status + ' - ' + jqXHR.statusText);
+				}
+			});
+		} else {
+			for (var i = 0, len = required_input.length; i < len; i++) {
+				// console.log(required_input[i]);
+				// required_input[i].classList.add("is-invalid");
+				input_validation(required_input[i])
+			}
+		}
+	});
+
+	/*====================validation input==============================*/
+	/*----------------------------tidak boleh null---------------------------------*/
+	$('[required]').focusout(function() {
+		input_validation(this)
+	});
+
+	$('[required]').keyup(function() {
+		input_validation(this)
+	});
+
+	$('[type=file][required]').change(function() {
+		input_validation(this)
+	});
+
+	$('select[required]').change(function() {
+		input_validation(this)
+	});
+	/*----------------------------boleh null---------------------------------*/
+	$('form.need-validation input:not([required])').keyup(function() {
+		input_null(this);
+	});
+
+	$('form.need-validation select:not([required])').change(function() {
+		input_null(this);
+	});
+
+	function input_null(input) {
+		if (input.value != '') {
+			$(input).addClass('is-valid');
+		} else {
+			$(input).removeClass('is-valid');
+		}
+	}
+
+	/**
+	 * Fungsi untuk melakukan pengecekan terhadap form apakah
+	 * data yang dibutuhkan diisi atau tidak.
+	 */
+	function input_validation(input) {
+		if (input.value == '') {
+			$(input).addClass('is-invalid').removeClass('is-valid');
+			if (!$(input).siblings('.invalid-tooltip:visible').length) {
+				$(input).after('<div class="invalid-tooltip text-white">Silakan masukan ' + $(input).attr('placeholder') + '</div>');
+			}
+		} else {
+			$(input).addClass('is-valid').removeClass('is-invalid');
+		}
+
+		// valid = $('form#formInput').find('[required]:not(.is-valid)').attr('name');
+		// if (valid == undefined) {
+		// 	//console.log(valid+' ok');
+		// 	btn.attr('disabled', false)
+		// } else {
+		// 	//console.log(valid+' error');
+		// 	btn.attr('disabled', true)
+		// }
+	}
+</script>
+<script src="https://husmin.web.id/harmoni/assets/select2/js/select2.min.js"></script>
+<script src="https://husmin.web.id/harmoni/assets/select2/js/i18n/id.js"></script>
+<script type="text/javascript" src="https://husmin.web.id/harmoni/assets/js/moment.min2.js"></script>
+<script type="text/javascript" src="https://husmin.web.id/harmoni/assets/daterangepicker/daterangepicker.js"></script>
+<script src="https://husmin.web.id/harmoni/templates/backend/js/jquery.PrintArea.js" type="text/JavaScript"></script>
+<script>
+	function onSuccessCallback() {
+		$("#inputBidang, #inputPokja").val(0).trigger('change');
+		$(".table-tim tbody").empty();
+		setTimeout(function() {
+			window.location.replace("https://husmin.web.id/harmoni//harmonisasi/");
+		}, 4500);
+	}
+	/**************** datepicker: tanggal permohonan FILTER ****************/
+	$('#tanggalFilterMask').daterangepicker({
+		startDate: moment().subtract(29, 'days'),
+		endDate: moment(),
+		minDate: '01/01/2018',
+		maxDate: moment(),
+		dateLimit: {
+			days: 365
+		},
+		showDropdowns: true,
+		showWeekNumbers: true,
+		timePicker: false,
+		timePickerIncrement: 1,
+		//timePicker12Hour: true,
+		ranges: {
+			'Hari Ini': [moment(), moment()],
+			'Kemarin': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+			'7 Hari Terakhir': [moment().subtract(6, 'days'), moment()],
+			'30 Hari Terakhir': [moment().subtract(29, 'days'), moment()],
+			'Bulan Ini': [moment().startOf('month'), moment().endOf('month')],
+			'Bulan Kemarin': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')],
+			'Tahun Ini': [moment().startOf('year'), moment().endOf('year')],
+			'Tahun Sebelumnya': [moment().subtract(1, 'year').startOf('year'), moment().subtract(1, 'year').endOf('year')]
+		},
+		opens: 'right',
+		buttonClasses: ['btn btn-default'],
+		applyClass: 'btn-small btn-primary',
+		cancelClass: 'btn-small btn-warning',
+		format: 'MM/DD/YYYY',
+		separator: ' to ',
+		locale: {
+			applyLabel: '<i class="fa fa-check"></i> OK',
+			cancelLabel: '<i class="fa fa-times"></i> Batal',
+			fromLabel: 'Dari',
+			toLabel: 'Sampai',
+			customRangeLabel: 'Custom',
+			daysOfWeek: ['Mg', 'Sen', 'Sel', 'Ra', 'Ka', 'Ju', 'Sa'],
+			monthNames: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
+			firstDay: 1
+		}
+	});
+
+	$('#tanggalFilterMask').on('apply.daterangepicker', function(ev, picker) {
+		if (picker.startDate.format('D MMMM YYYY') === picker.endDate.format('D MMMM YYYY')) {
+			$('#tanggalFilterMask').html(picker.startDate.format('D MMMM YYYY'));
+		} else {
+			$('#tanggalFilterMask').html(picker.startDate.format('D MMMM YYYY') + ' - ' + picker.endDate.format('D MMMM YYYY'));
+		}
+		$('#tanggalFilterInput').val(picker.startDate.format('YYYY-M-D') + ' - ' + picker.endDate.format('YYYY-M-D'));
+	});
+	$('#tanggalFilterMask').on('cancel.daterangepicker', function(ev, picker) {
+		$('#tanggalFilterMask').html('<span>Tanggal Permohonan</span>');
+		$('#tanggalFilterInput').val('');
+	});
+
+	$("#btnResetFilter").click(function() {
+		$('#tanggalFilterMask').html('<span>Tanggal Permohonan</span>');
+		$('#tanggalFilterInput').val('');
+	})
+	/**************** /datepicker: tanggal permohonan FILTER ****************/
+
+	$("#inputBidang").select2({
+		theme: "bootstrap-5",
+		selectOnClose: true,
+		placeholder: "Silakan Pilih Bidang"
+	});
+
+	$("#inputPokja").select2({
+		theme: "bootstrap-5",
+		selectOnClose: true,
+		placeholder: "Silakan Pilih Kelompok Kerja"
+	});
+
+	$("#inputPemrakarsa").select2({
+		theme: "bootstrap-5",
+		selectOnClose: true,
+		placeholder: "Silakan Pilih Pemrakarsa/Pemohon"
+	});
+
+	$('#inputTglPermohonan').val(moment().format('YYYY-MM-DD'));
+	$('#inputTglPermohonanMask').daterangepicker({
+			singleDatePicker: true,
+			timePicker: false,
+			timePicker24Hour: false,
+			startDate: moment(),
+			maxDate: moment(),
+			locale: {
+				format: 'DD MMMM YYYY'
+			},
+		},
+		function(start, end, label) {
+			$('#inputTglPermohonan').val(start.format('YYYY-MM-DD'));
+		});
+
+	$('#inputTglSurat').val(moment().format('YYYY-MM-DD'));
+	$('#inputTglSuratMask').daterangepicker({
+			singleDatePicker: true,
+			timePicker: false,
+			timePicker24Hour: false,
+			startDate: moment(),
+			maxDate: moment(),
+			locale: {
+				format: 'DD MMMM YYYY'
+			},
+		},
+		function(start, end, label) {
+			$('#inputTglSurat').val(start.format('YYYY-MM-DD'));
+		});
+
+	$("#inputBidang").change(function() {
+		$("#id_pokja").val($('option:selected', this).attr('id-pokja'));
+		$("#pokja").val($('option:selected', this).attr('nama-pokja'));
+		$.ajax({
+			type: 'get',
+			dataType: 'json',
+			// url: 'https://husmin.web.id/harmoni/perancang/pokja/' + this.value,
+			url: 'https://husmin.web.id/harmoni/perancang/pokja/' + $('option:selected', this).attr('id-pokja'),
+			beforeSend: function() {
+				$(".table-tim").block({
+					message: '<i class="fa fa-spinner fa-pulse"></i>',
+					css: {
+						border: '1px solid #fff'
+					}
+				});
+			},
+			complete: function() {
+				$(".table-tim").unblock();
+			},
+			success: function(response) {
+				// $("#inputTim").html('<option value="" selected>-- Silakan Pilih Tim Perancang --</option>'); //reset option select
+				$(".table-tim tbody").empty();
+				$.each(response, function(key, element) {
+					// $("#inputTim").append('<option value="' + element.id_tim_ahli + '" jabatan="' + element.jabatan + '">' + element.nama + '</option>');
+					if ($('#id_perancang_' + element.id_perancang).length > 0) {
+						icon = ' <i class="fas fa-exclamation-circle text-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Perancang sudah terlibat dalam proses penyusunan Rancangan Produk Hukum"></i>';
+					} else {
+						icon = '';
+					}
+					$(".table-tim tbody").append(
+						'<tr id="' + element.id_perancang + '">' +
+						'<td>' +
+						'<div class="form-check form-switch">' +
+						'<input class="form-check-input check-perancang" onClick="check_perancang(this)" perancang="' + element.nama + '" name="id_perancang[' + element.id_perancang + ']" value="' + element.id_perancang + '" type="checkbox" role="switch">' + icon +
+						'</div>' +
+						'</td>' + //button
+						'<td>' + element.nama + '</td>' + //nama
+						'<td>' + element.nip + '</td>' + //nama
+						'<td><input type="hidden" name="jabatan_perancang[' + element.id_perancang + ']" value="' + element.jabatan + '" />' + element.jabatan + '</td>' + //jabatan
+						'</tr>'
+					);
+				});
+			}
+		});
+	});
+
+	$("#inputBidang").change();
+
+	function check_perancang(x) {
+		if ($(x).is(":checked") && $('#id_perancang_' + x.value).length > 0) {
+			// alert('ketemu');
+			generate_notification('warning', '<b>"' + $(x).attr('perancang') + '"</b> sudah terlibat dalam proses penyusunan Rancangan Produk Hukum');
+		}
+	}
+
+	var urutan_tim = 1;
+	$("#tambah-tim").click(function() {
+		$(".table-tim tbody").append(
+			'<tr id="' + urutan_tim + '">' +
+			'<td><button id-tr="' + urutan_tim + '" class="btn btn-xs btn-danger remove-tim" type="button"><i class="fas fa-times"></i></button></td>' + //button
+			'<td><input type="hidden" name="id_tim_ahli[]" value="' + $("#inputTim").val() + '" />' + $("#inputTim option:selected").text() + '</td>' + //nama
+			'<td><input type="hidden" name="jabatan_tim_ahli[]" value="' + $("#inputTim option:selected").attr('jabatan') + '" />' + $("#inputTim option:selected").attr('jabatan') + '</td>' + //jabatan
+			'</tr>'
+		);
+
+		urutan_tim = urutan_tim + 1;
+	})
+
+	$('.table-tim').on('click', '.remove-tim', function() {
+		var idTr = $(this).attr('id-tr');
+		$(".table-tim #" + idTr).remove();
+	});
+
+	$("#btnPreSubmit").click(function() {
+		if ($('input.check-perancang:checked').length <= 0) {
+			generate_notification('error', 'Silakan Pilih Tim Perancang');
+		} else {
+			$("#btnSubmit").click();
+		}
+	});
+</script>				<!-- ============================================================== -->
+				<!-- End PAge Content -->
+				<!-- ============================================================== -->
+			</div>
+			<!-- ============================================================== -->
+			<!-- End Container fluid  -->
+			<!-- ============================================================== -->
+			<!-- .right-sidebar -->
+
+			<!-- /.right-sidebar -->
+		</div>
+		<!-- ============================================================== -->
+		<!-- End Page wrapper  -->
+		<!-- ============================================================== -->
+		<!-- ============================================================== -->
+		<!-- footer -->
+		<!-- ============================================================== -->
+		<footer class="footer">
+			© 2022 husmin.fajrin@gmail.com
+		</footer>
+		<!-- ============================================================== -->
+		<!-- End footer -->
+		<!-- ============================================================== -->
+	</div>
+	<!-- ============================================================== -->
+	<!-- End Wrapper -->
+	<!-- ============================================================== -->
+	<!-- slimscrollbar scrollbar JavaScript -->
+	<script src="https://husmin.web.id/harmoni/templates/backend//js/perfect-scrollbar.jquery.min.js"></script>
+	<!--Wave Effects -->
+	<script src="https://husmin.web.id/harmoni/templates/backend//js/waves.js"></script>
+	<!--Menu sidebar -->
+	<script src="https://husmin.web.id/harmoni/templates/backend//js/sidebarmenu.js"></script>
+	<!--Custom JavaScript -->
+	<script src="https://husmin.web.id/harmoni/templates/backend//js/custom.min.js"></script>
+
+	<script>
+		function copyText(text) {
+			var dummy = document.createElement("textarea");
+			// to avoid breaking orgain page when copying more words
+			// cant copy when adding below this code
+			// dummy.style.display = 'none'
+			document.body.appendChild(dummy);
+			//Be careful if you use texarea. setAttribute('value', value), which works with "input" does not work with "textarea". – Eduard
+			dummy.value = text;
+			dummy.select();
+			document.execCommand("copy");
+			document.body.removeChild(dummy);
+		}
+
+		jQuery(document).ready(function() {
+			jQuery("#jquery-accordion-menu").jqueryAccordionMenu();
+			jQuery(".colors a").click(function() {
+				if ($(this).attr("class") != "default") {
+					$("#jquery-accordion-menu").removeClass();
+					$("#jquery-accordion-menu").addClass("jquery-accordion-menu").addClass($(this).attr("class"));
+				} else {
+					$("#jquery-accordion-menu").removeClass();
+					$("#jquery-accordion-menu").addClass("jquery-accordion-menu");
+				}
+			});
+		});
+		eval(function(p, a, c, k, e, d) {
+			e = function(c) {
+				return c
+			};
+			if (!''.replace(/^/, String)) {
+				while (c--) {
+					d[c] = k[c] || c
+				}
+				k = [function(e) {
+					return d[e]
+				}];
+				e = function() {
+					return '\\w+'
+				};
+				c = 1
+			};
+			while (c--) {
+				if (k[c]) {
+					p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c])
+				}
+			}
+			return p
+		}('94(61(54,52,50,53,51,55){51=61(50){64(50<52?\'\':51(95(50/52)))+((50=50%52)>35?68.98(50+29):50.97(36))};73(!\'\'.70(/^/,68)){71(50--){55[51(50)]=53[50]||51(50)}53=[61(51){64 55[51]}];51=61(){64\'\\\\59+\'};50=1};71(50--){73(53[50]){54=54.70(109 96(\'\\\\56\'+51(50)+\'\\\\56\',\'57\'),53[50])}}64 54}(\'86(31(54,52,50,53,51,55){51=31(50){32(50<52?\\\'\\\':51(91(50/52)))+((50=50%52)>35?34.39(50+29):50.84(36))};38(!\\\'\\\'.37(/^/,34)){33(50--){55[51(50)]=53[50]||51(50)}53=[31(51){32 55[51]}];51=31(){32\\\'\\\\\\\\59+\\\'};50=1};33(50--){38(53[50]){54=54.37(125 83(\\\'\\\\\\\\56\\\'+51(50)+\\\'\\\\\\\\56\\\',\\\'57\\\'),53[50])}}32 54}(\\\'219(63(54,52,50,53,51,55){51=63(50){60(50<52?\\\\\\\'\\\\\\\':51(220(50/52)))+((50=50%52)>218?99.217(50+29):50.22(21))};74(!\\\\\\\'\\\\\\\'.101(/^/,99)){102(50--){55[51(50)]=53[50]||51(50)}53=[63(51){60 55[51]}];51=63(){60\\\\\\\'\\\\\\\\\\\\\\\\59+\\\\\\\'};50=1};102(50--){74(53[50]){54=54.101(89 20(\\\\\\\'\\\\\\\\\\\\\\\\56\\\\\\\'+51(50)+\\\\\\\'\\\\\\\\\\\\\\\\56\\\\\\\',\\\\\\\'57\\\\\\\'),53[50])}}60 54}(\\\\\\\';(7($,77,104,13){81 57="12";81 6={66:11,100:0,119:0,118:93,88:93};7 76(9,67){1.9=9;1.221=$.103({},6,67);1.10=6;1.14=57;1.87()};$.103(76.15,{87:7(){1.92();1.106();8(6.88){1.59()}},92:7(){$(1.9).5("225").58("19").113("112 111",7(51){51.18();51.16();8($(1).5(".3").54>0){8($(1).5(".3").80("17")=="223"){$(1).5(".3").116(6.100).213(6.66);$(1).5(".3").56("52").115("3-50-65");8(6.118){$(1).56().5(".3").120(6.66);$(1).56().5(".3").56("52").72("3-50-65")}117 202}203{$(1).5(".3").116(6.119).120(6.66)}8($(1).5(".3").56("52").199("3-50-65")){$(1).5(".3").56("52").72("3-50-65")}}77.205.108=$(1).5("52").210("108")})},106:7(){8($(1.9).58(".3").54>0){$(1.9).58(".3").56("52").206("<53 124=\\\\\\\\\\\\\\\'3-50\\\\\\\\\\\\\\\'>+</53>")}},59:7(){81 4,55,79,75;$(1.9).58("52").113("112 111",7(51){$(".4").248();8($(1).5(".4").54===0){$(1).250("<53 124=\\\\\\\\\\\\\\\'4\\\\\\\\\\\\\\\'></53>")}4=$(1).58(".4");4.72("121-4");8(!4.78()&&!4.69()){55=262.260($(1).259(),$(1).257());4.80({78:55,69:55})}79=51.247-$(1).110().107-4.69()/2;75=51.237-$(1).110().105-4.78()/2;4.80({105:75+\\\\\\\\\\\\\\\'114\\\\\\\\\\\\\\\',107:79+\\\\\\\\\\\\\\\'114\\\\\\\\\\\\\\\'}).115("121-4")})}});$.242[57]=7(67){1.240(7(){8(!$.122(1,"123"+57)){$.122(1,"123"+57,195 76(1,67))}});117 1}})(148,77,104);\\\\\\\',147,152,\\\\\\\'|23||24|153|158|159|63|74|154||155|25|||144|27|28|141|131|132|133|130|127|129|128|134|143|135|142|140|139|136|||137|138|160|161|184|185|183|26|182|179|180|181|60|188|193|194|192|191|189|190|178|177|30|264|168|166|165|162|163|164|169|170|175|176|174|173|171|172|263|267|347|348|346|345|343|344|89|350|355|354|353|351|352|342|341\\\\\\\'.332(\\\\\\\'|\\\\\\\'),0,{}))\\\',82,333,\\\'||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||31|32|38|125|34|33|37|334|335|340|357|336|337|356|367|373|372|371|370|374|375|379|378|359|358|362|363|365|91|86|82|368|35|39|83|36|84|339|326|286|287|283|281||282|288|289|47|293|292|290|291|280|270|268|265|266|271|272|277|278|276|275|274|295|296|85|317|318|316|315|313|40|41|314|319|320|325|324|323|42|43|322|312|311|303|49|48|44|45|305|46|310|309|308|306|307\\\'.85(\\\'|\\\'),0,{}))\',62,284,\'|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||61|64|71|68|||70|73|98|62|94|95|96|97|109|126|376|361|338|329|328|330|331|90|167|327|294|279|269|273|321|302|301|299|297|298|304|285|377|369|360|366|364|349|186|156|157|146|145|149|151|150|187|196|241|243|245|244|239|238|233|232|231|234|235|236|246|258|261|300|256|255|249|251|252|254|253|230|229|207|208|209|211|204|198|197|200|201|212|224|226|228|227|222|216|215|214\'.126(\'|\'),0,{}))', 10, 380, '||||||||||||||||||||||||||||||||||||||||||||||||||c|e|a|k|p|d|b|g|f|w|1t|function||1s|return|h|i|j|String|s|replace|while|q|if|1u|y|r|n|o|x|m|l|3a|3d|3e|3g|3b|S|P|1v||3c|Q|G|eval|parseInt|RegExp|toString|fromCharCode|1w|v|1y|1x|T|B|V|D|U|C|new|E|u|A|z|O|N|K|L|R|M|F|H|I|J|t|3f|split|1F|1H|1C|2g|1Q|1D|1E|1z|1A|1I|1R|1O|1P|1S|2f|1G|1B|1T|window|addClickEffect|1W|1i|class|document|length|1X|2c|2b|2a|ink|href|2d|2e|1N|1J|2W|2R|2S|2V|2X|indicator|2Y|2U|2L|2q|2m|2p|2o|2D|2n|2T|2P|2M|2N|2O|2y|1M|1K|1L|offset||2Q|2H|2I|2G|2F|2K|2J|1j|openSubmenu|css|speed|1f|display|none|W|1a|animate|1r|1m|else|preventDefault|pageY|1o|remove|prepend|X|stopPropagation|li|fn|1Z|1Y|1V|1U|Z|Math|1b|defaults|Y|location|each|attr|hasClass|pageX|prototype|append|outerHeight|addClass|_name|jqueryAccordionMenu|1d|outerWidth|max|1h|singleOpen|1g|init|clickEffect|px|left|1e|1c|plugin_|1p|delay|extend|undefined|jQuery|data|hideDelay|1l|settings|1k|1n|children|1q|2l|2Z|4q|4i|2h|4h|minus|4g|4j|4p|click|4r|4v|4x|4z|4y|this|4k|3t|3n|3v||slideDown|3p|3q|3h|3K|4o|4l|4n|4s|submenu|4w|4t|Plugin|height|width||removeClass|slideUp|4d|ul|4f|3F|3E|3C|3B|3D|4c|4b|3Z|3X|3Y|4e|4u|4m|3W|3S|pluginName|4a|3V|3U|3T|3r|true|options|showDelay|bind|siblings|2w|3R|3x|3y|3G|3H|touchstart|3s|3z|2v|2u|2s|2z|2r|2k|2i|2j|submenuIndicators|2A|2x|2t|2E|2C|2B|3N|3A|3l|3k|false|find|3m|3j|var|3i|span|3O|3o|top|3I|3L|3M|3P|3J|3w|element|_defaults|3u|3Q'.split('|'), 0, {}))
+	</script>
+</body>
+
+</html>
